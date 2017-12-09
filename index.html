@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- MATERIALIZE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- TEXT FONT FOR THE WEBPAGE -->
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- CUSTOM JAVASCRIPT FILE -->
+  <script type="text/javascript" src="script.js"></script>
+  <!-- FONT AWESOME -->
+  <script src="https://use.fontawesome.com/2a35e63884.js"></script>
+  <!-- DEVICONS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- TYPING EFFECT -->
+  <script src="jquery.lettering.js"></script>
+  <script src="jquery.textillate.js"></script>
+  <link rel="stylesheet" href="animate.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+
+<body>
+  <!-- THIS IS THE BACKGROUND WRAPPER -->
+  <div class="wrapperpage">
+
+    <!--  THIS IS THE NAV BAR-->
+    <div id="top_nav">
+      <ul>
+        <li class="mainMenu-itemLevel1 aboutme"><a href="#aboutmepageid">
+            About Me</a></li>
+        <li class="mainMenu-itemLevel1">
+          <a href="#projectspageid">Projects</a>
+        </li>
+        <li class="mainMenu-itemLevel1">
+          <a href="#top_nav"><span class="Slogo">S</span></a>
+        </li>
+        <li class="mainMenu-itemLevel1">
+          <a href="#skillspageid">Skills</a>
+        </li>
+        <li class="mainMenu-itemLevel1">
+          <a href="#contactmepageid">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- THIS IS THE PROJECTS PAGE -->
+    <div class="projectspage" id="projectspageid">
+        <div class="cssbox">
+          <!-- THIS IS BOX 1 -->
+          <div data-tilt data-tilt-axis class="box box1">
+
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+          </div>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">close</a>
+            </div>
+          </div>
+
+
+
+
+
+          <!-- THIS IS BOX 2 -->
+          <div data-tilt data-tilt-axis class="box box2">
+            </div>
+
+          <!-- THIS IS BOX 3 -->
+          <div data-tilt data-tilt-axis class="box box3">
+            </div>
+
+          <!-- THIS IS BOX 4 -->
+          <div data-tilt data-tilt-axis class="box box4">
+            </div>
+
+          <!-- THIS IS BOX 5 -->
+          <div data-tilt data-tilt-axis class="box box5">
+            </div>
+        </div>
+        </div>
+
+    <!-- THIS IS ABOUT ME PAGE -->
+    <div class="aboutmepage" id="aboutmepageid">
+      <p>hi its me</p>
+    </div>
+
+    <!-- THIS IS MY SKILLS PAGE -->
+    <div class="skillspage" id="skillspageid">
+      <h1 id="demo" class= "skillstext"> I use these tools to make awesome happen</h1>
+
+      <script>
+
+        $('#demo').textillate({
+        in: { effect: 'flipInY', delay:90},
+        out: { effect: 'swing'},
+        loop: true
+        });
+      </script>
+
+      <div class="firsteightskills">
+        <i class="devicon-html5-plain devicon"></i>
+        <i class="devicon-css3-plain devicon"></i>
+        <i class="devicon-bootstrap-plain devicon"></i>
+        <i class="devicon-sass-original devicon"></i>
+        <i class="devicon-gulp-plain devicon"></i>
+        <i class="devicon-ruby-plain devicon"></i>
+        <i class="devicon-python-plain devicon"></i>
+        <i class="devicon-mysql-plain devicon"></i>
+      </div>
+      <div class="secondeightskills">
+      <i class="devicon-nodejs-plain devicon"></i>
+      <i class="devicon-mongodb-plain devicon"></i>
+      <i class="devicon-javascript-plain devicon"></i>
+      <i class="devicon-jquery-plain devicon"></i>
+      <i class="devicon-git-plain devicon"></i>
+      <i class="devicon-express-original devicon"></i>
+      <i class="devicon-django-plain devicon"></i>
+      <i class="devicon-react-original devicon"></i>
+    </div>
+  </div>
+
+
+    <!-- THIS IS MY CONTACT PAGE -->
+    <div class="contactmepage" id="contactmepageid">
+      <p>let's get in touch</p>
+    </div>
+
+    <!--  THIS IS THE FOOTER-->
+    <div class="footer">
+      <a href="#"><i class="fa fa-github fa-3x github" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square fa-3x linkedin" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-slack fa-3x slack" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-dribbble fa-3x dribble" aria-hidden="true"></i></a>
+    </div>
+    <a href="#" class="scrollToTop"><i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i></a>
+  </div>
+
+  <!-- THIS IS MATERIALIZE SCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- THIS IS THE TILT EFFECT -->
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+</body>
+
+</html>
